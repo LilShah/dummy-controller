@@ -1,0 +1,19 @@
+domain: interview.com
+layout:
+- go.kubebuilder.io/v3
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: tmp-homework-ms
+repo: github.com/anynines/tmp-homework-ms
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: interview.com
+  group: interview
+  kind: Dummy
+  path: github.com/anynines/tmp-homework-ms/api/v1alpha1
+  version: v1alpha1
+version: "3"

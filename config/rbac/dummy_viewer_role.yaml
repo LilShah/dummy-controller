@@ -1,0 +1,20 @@
+# permissions for end users to view dummies.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: dummy-viewer-role
+rules:
+- apiGroups:
+  - interview.interview.com
+  resources:
+  - dummies
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - interview.interview.com
+  resources:
+  - dummies/status
+  verbs:
+  - get

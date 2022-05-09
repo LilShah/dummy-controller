@@ -1,0 +1,7 @@
+apiVersion: interview.interview.com/v1alpha1
+kind: Dummy
+metadata:
+  name: dummy1
+  namespace: tmp-homework-ms-system
+spec:
+  message: "I'm just a dummy"
